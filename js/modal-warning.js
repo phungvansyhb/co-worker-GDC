@@ -1,7 +1,7 @@
 $(document).ready(function () {
-	const modal = $('#myModal');
+	const modal = $('#warningModal');
 	
-	const closeBtn = $('#closeModal');
+	const closeBtn = $('#closeModalWarning');
 
 	closeBtn.on('click', function () {
 		modal.hide();

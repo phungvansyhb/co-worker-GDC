@@ -78,6 +78,11 @@ h1 {
 	text-decoration: none;
 }
 
+.login-wrap .login-form {
+	margin-top: 8px;
+
+}
+
 .login-wrap input {
 	width: 404px;
 	display: block;
@@ -89,12 +94,16 @@ h1 {
 	padding-left: 12px;
 }
 
-.login-wrap .login-form {
-	margin-top: 8px;
-
-}
-
 .login-wrap .login-form .form-input {
 	margin-top: 24px;
 }
 
+.inputErrorClass {
+	border: 2px solid red !important;
+	color: red !important
+}
+
+.lableErrorClass {
+	font-weight: 600;
+	color: red;
+}

@@ -7,28 +7,30 @@ $(function () {
 		const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 		return regex.test(input);
 	}
+	function addErrorClass(name) {
+		$(`#${name}`).addClass('inputErrorClass');
+		$(`label[for=${name}]`).addClass('lableErrorClass');
+	}
+	function removeErrorClass(name) {
+		$(`#${name}`).removeClass('inputErrorClass');
+		$(`label[for=${name}]`).removeClass('lableErrorClass');
+	}
 	// login page js
 	$('#loginBtn').on('click', function () {
 		const id = $('#id').val();
 		const password = $('#password').val();
 		const isValidId = isFiveDigitNumber(id);
 		const isValidPassword = isValidCombination(password);
-		console.log(isValidId, isValidPassword);
-		const errorClass = {}
+
 		if (!isValidId) {
-			//make label and input outline red
-			$('#id').css('border', '2px solid red');
-			$('label[for="id"]').css('color', 'red');
+			addErrorClass('id');
 		} else {
-			$('#id').css('border', '1px solid #949494');
-			$('label[for="id"]').css('color', 'black');
+			removeErrorClass('id');
 		}
 		if (!isValidPassword) {
-			$('#password').css('border', '2px solid red');
-			$('label[for="password"]').css('color', 'red');
+			addErrorClass('password');
 		} else {
-			$('#password').css('border', '1px solid #949494');
-			$('label[for="password"]').css('color', 'black');
+			removeErrorClass('password');
 		}
 		if (!isValidId || !isValidPassword) {
 			const modal = $('#myModal');

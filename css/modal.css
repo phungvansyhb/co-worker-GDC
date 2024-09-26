@@ -37,6 +37,11 @@
     cursor: pointer;
 }
 
+.modal-content button.cancel {
+    background: white;
+    color: black
+}
+
 /* The Close Button */
 .close {
     color: #aaa;

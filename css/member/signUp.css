@@ -5,48 +5,75 @@ body {
 	background-color: #F2F2F2;
 	margin: 0;
 }
-h1, p {
+
+h1,
+p {
 	margin: 0;
 }
-h1{
+
+h1 {
 	color: black;
 	font-size: 36px;
 	letter-spacing: -0.2px;
 }
+
 .signUp {
 	width: 588px;
-	height: 833px;
 	display: flex;
 	margin: auto;
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px 5px rgb(206, 206, 206);
 }
+
 .sub-title {
 	color: #46515C;
 	font-size: 20px;
 }
+
 .signUp-content {
 	margin-top: 55px;
+	margin-bottom: 55px;
 	margin-left: 76px;
 }
-.signUp table {
-	width: 100%;
+
+.signUp .form-input {
+	margin-top: 24px;
 }
-.signUp th, .signUp td {
-	padding: 5px;
-}
-.signUp table input {
+
+.signUp input,
+select {
+	width: 404px;
+	display: block;
+	margin-top: 8px;
 	height: 40px;
 	font-size: 16px;
 	border: 1px solid #949494;
 	border-radius: 4px;
+	padding-left: 12px;
 }
+
+.signUp .form-input .group-input {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.signUp .form-input .group-input input,
+select {
+	width: 50%;
+}
+
+.signUp .form-input .group-input select {
+	height: 44.5px;
+}
+
 .button-wrap {
 	margin-top: 30px;
 }
-.button-wrap .Registration {
-	width: 436px;
+
+.button-wrap .registration {
+	width: 100%;
 	height: 51px;
 	background: #F24976;
 	border-radius: 5px;
@@ -55,8 +82,9 @@ h1{
 	font-size: 22px;
 	cursor: pointer;
 }
+
 .button-wrap .cancel {
-	width: 435px;
+	width: 100%;
 	height: 51px;
 	margin-top: 7px;
 	border-radius: 5px;
@@ -65,4 +93,14 @@ h1{
 	background-color: #fff;
 	font-size: 22px;
 	cursor: pointer;
+}
+
+.inputErrorClass {
+	border: 2px solid red !important;
+	color: red !important
+}
+
+.lableErrorClass {
+	font-weight: 600;
+	color: red;
 }

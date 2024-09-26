@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>LG사이언스파크</title>
-<link rel="stylesheet" href="../css/member/signUp.css">
-<script src="../lib/js/jquery-3.4.1.js"></script>
-<script src="../js/member/signUp.js"></script>
+	<meta charset="UTF-8">
+	<title>LG사이언스파크</title>
+	<link rel="stylesheet" href="../css/member/signUp.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<script src="../lib/js/jquery-3.4.1.js"></script>
+	<script src="../js/member/signUp.js"></script>
+	<script src="../js/modal-success.js"></script>
+	<script src="../js/modal-warning.js"></script>
+
+
 </head>
-<body> 
+
+<body>
 	<div class="signUp">
 		<div class="signUp-content">
 			<h1>Registration</h1>
 			<p class="sub-title">Please create your account.</p>
 			<!-- signUp page Html source -->
+			<form class="signup-form">
+				<div class="form-input id-input">
+					<label for="id">Employee ID</label>
+					<input type="text" name="id" placeholder="Enter employee number( 5digits )" id="id"></input>
+
+				</div>
+				<div class="form-input name-input">
+					<label for="username">Username</label">
+						<input name="userName" placeholder="Enter name" id="username"></input>
+				</div>
+				<div class="form-input password-input">
+					<label for="password">Password</label">
+						<input type="password" name="password"
+							placeholder="Enter password( English + numeric maix 8 digits or more)"
+							id="password"></input>
+				</div>
+				<div>
+					<div class="form-input email-input">
+						<label for="email">Email Name</label">
+							<div class="group-input">
+								<input name="email" type="email" placeholder="Enter eamil address" id="email"></input>
+								<select name="domain" placeholder="Select eamil domain" id="emailDomain">
+									<option value="naver.com">naver.com</option>
+									<option value="gmail.net">gmail.net</option>
+									<option value="lgcns.com">lgcns.com</option>
+								</select>
+							</div>
+
+					</div>
+
+				</div>
+				<div class="form-input team-input">
+					<label for="teamName">Team Name</label">
+						<input name="teamName" placeholder="Enter team name" id="teamName"></input>
+				</div>
+				<div class="form-input company-input">
+					<label for="companyAddress">Company Address</label">
+						<input name="companyAddress" placeholder="Enter company address" id="companyAddress"></input>
+				</div>
+			</form>
+
 			<div class="button-wrap">
 				<!-- Button source -->
+				<button id="registration" class="registration">Registration</button>
+				<button class="cancel">Cancel</button>
+			</div>
+			<div id="successModal" class="modal">
+				<div class="modal-content">
+					<p>You have successfully joined </p>
+					<button id="closeModalSuccess">OK</button>
+
+				</div>
+			</div>
+			<div id="warningModal" class="modal">
+				<div class="modal-content">
+					<p>Are you sure want to cancel sign up?</p>
+					<button id="closeModalWarning" class="cancel">Cancel</button>
+					<button id="confirmModal">Confirm</button>
+
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
+
 </html>

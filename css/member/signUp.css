@@ -1,0 +1,68 @@
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: #F2F2F2;
+	margin: 0;
+}
+h1, p {
+	margin: 0;
+}
+h1{
+	color: black;
+	font-size: 36px;
+	letter-spacing: -0.2px;
+}
+.signUp {
+	width: 588px;
+	height: 833px;
+	display: flex;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 5px rgb(206, 206, 206);
+}
+.sub-title {
+	color: #46515C;
+	font-size: 20px;
+}
+.signUp-content {
+	margin-top: 55px;
+	margin-left: 76px;
+}
+.signUp table {
+	width: 100%;
+}
+.signUp th, .signUp td {
+	padding: 5px;
+}
+.signUp table input {
+	height: 40px;
+	font-size: 16px;
+	border: 1px solid #949494;
+	border-radius: 4px;
+}
+.button-wrap {
+	margin-top: 30px;
+}
+.button-wrap .Registration {
+	width: 436px;
+	height: 51px;
+	background: #F24976;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+}
+.button-wrap .cancel {
+	width: 435px;
+	height: 51px;
+	margin-top: 7px;
+	border-radius: 5px;
+	border: 1px solid #111;
+	color: #111;
+	background-color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+}

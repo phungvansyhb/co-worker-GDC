@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>LG사이언스파크</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<script src="lib/js/jquery-3.4.1.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/modal.js"></script>
+
+</head>
+
+<body>
+	<div class="login-content">
+		<div class="img"></div>
+		<div class="login-wrap">
+			<h1>Login</h1>
+			<p class="sub-title">Please login to your account.</p>
+			<!-- login page Html source -->
+			<form class="login-form">
+				<div class="form-input id-input">
+					<label for="id">ID</label>
+					<input type="text" name="id" placeholder="Please enter login ID" id="id"></input>
+
+				</div>
+				<div class="form-input password-input">
+					<label for="password">Password</label">
+						<input type="password" name="password" placeholder="Please enter login password"
+							id="password"></input>
+				</div>
+
+			</form>
+
+			<button id="loginBtn">Login</button>
+
+			<div class="link-group">
+				<p>New User?</p><a href="./member/signUp.html">Registration</a>
+			</div>
+		</div>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<p>The login ID/password format is not valid</p>
+				<button id="closeModal">OK</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
